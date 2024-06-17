@@ -57,9 +57,7 @@ class MyBrowser extends Component<MyBrowserProps, MyBrowserState> {
     return data.reduce<Array<FileSystemEntry>>((filtered, item) => {
       if (item.type === FOLDER_TYPE) {
         const children = this.filterData(item.children, searchTerm);
-        if (children.length > 0) {
-          filtered.push({ ...item, children });
-        }
+        children.length > 0 && filtered.push({ ...item, children });
       } else if (item.name.toLowerCase().includes(searchTerm.toLowerCase())) {
         filtered.push(item);
       }
@@ -70,6 +68,7 @@ class MyBrowser extends Component<MyBrowserProps, MyBrowserState> {
   render() {
     const { data, searchTerm, isLoaded, error } = this.state;
     const filteredData = this.filterData(data, searchTerm);
+
     return (
       <div>
         <SearchBar

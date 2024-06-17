@@ -12,6 +12,7 @@ interface FileListProps {
 class FileList extends PureComponent<FileListProps> {
   render() {
     const { data, expandedFolders } = this.props;
+
     return (
       <div>
         {data.map((item) => {
@@ -20,12 +21,12 @@ class FileList extends PureComponent<FileListProps> {
               <Folder
                 key={item.name}
                 {...item}
-                expandedByDefault={expandedFolders.includes(item.name)}
+                parentPath=""
+                expandedFolders={expandedFolders}
               />
             );
-          } else {
-            return <File key={item.name} name={item.name} mime={item.mime} />;
           }
+          return <File key={item.name} name={item.name} mime={item.mime} />;
         })}
       </div>
     );

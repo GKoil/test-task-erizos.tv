@@ -5,6 +5,6 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MyBrowser expandedFolders={['VC']} />
+    <MyBrowser expandedFolders={['/VC/bin/arm', '/SDK/Bootstrapper/']} />
   </React.StrictMode>
 );

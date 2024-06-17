@@ -8,6 +8,7 @@ interface FileProps {
 class File extends Component<FileProps> {
   render() {
     const { name, mime } = this.props;
+
     return (
       <div style={{ paddingLeft: '20px' }}>
         <span>
