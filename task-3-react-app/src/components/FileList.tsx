@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import File from '@components/File';
 import Folder from '@components/Folder';
-import { FileSystemEntry } from '@types/FileSystemEntry';
+import { FileSystemEntry } from '@myTypes/FileSystemEntry';
 import { FOLDER_TYPE } from '@constants';
 
 interface FileListProps {

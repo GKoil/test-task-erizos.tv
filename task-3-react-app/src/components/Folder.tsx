@@ -1,6 +1,6 @@
 import { PureComponent } from 'react';
 import File from '@components/File';
-import { FolderType } from '@types/FolderType';
+import { FolderType } from '@myTypes/FolderType';
 import { FOLDER_TYPE } from '@constants';
 
 interface FolderProps extends FolderType {

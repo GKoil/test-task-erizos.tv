@@ -15,7 +15,7 @@
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
-      "@types/*": ["types/*"],
+      "@myTypes/*": ["types/*"],
       "@utils/*": ["utils/*"],
       "@mock/*": ["mock/*"],
       "@constants": ["constants.ts"]

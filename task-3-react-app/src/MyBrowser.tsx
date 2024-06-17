@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import FILE_STRUCTURE from '@mock/FILE_STRUCTURE.json';
-import { FileSystemEntry } from '@types/FileSystemEntry';
+import { FileSystemEntry } from '@myTypes/FileSystemEntry';
 import SearchBar from '@components/SearchBar';
 import FileList from '@components/FileList';
 import { FOLDER_TYPE } from '@constants';
